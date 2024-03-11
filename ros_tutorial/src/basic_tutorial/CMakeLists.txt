@@ -118,6 +118,9 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
+add_executable(basic_node src/basic.cpp)
+target_link_libraries(basic_node ${catkin_LIBRARIES})
+
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
 #   src/${PROJECT_NAME}/basic_tutorial.cpp
