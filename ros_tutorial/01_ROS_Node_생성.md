@@ -1,4 +1,4 @@
-# ROS Node 생성
+# 01 - ROS Node 생성
 
 > 목표 : 터미널에 `Hello World!`를 출력하는 Node를 생성한다.
 
