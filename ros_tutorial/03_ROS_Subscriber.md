@@ -1,4 +1,4 @@
-#02- ROS Subscriber 생성
+# 03 - ROS Subscriber
 
 > 목표 : `geometry_msgs/Twist` topic을 수신하는 Subscriber 노드를 생성한다.
 

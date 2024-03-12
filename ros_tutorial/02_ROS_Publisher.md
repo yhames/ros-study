@@ -1,4 +1,4 @@
-#02- ROS Publisher 생성
+# 02 - ROS Publisher 생성
 
 > 목표 : `geometry_msgs/Twist` topic을 발행하는 Publisher 노드를 생성한다.
 
