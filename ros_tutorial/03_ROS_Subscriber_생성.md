@@ -1,6 +1,6 @@
 #02- ROS Subscriber 생성
 
-> 목표 : `geometry_msgs/Twist` topic을 하는 Publisher 노드를 생성한다.
+> 목표 : `geometry_msgs/Twist` topic을 수신하는 Subscriber 노드를 생성한다.
 
 ## geometry_msgs 패키지 추가
 
