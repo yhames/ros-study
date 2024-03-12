@@ -133,3 +133,16 @@ rostopic echo /cmd_vel
 ```
 
 위 명령어를 사용하여 해당 topic의 값을 확인할 수 있습니다.
+
+```bash
+---
+linear:
+  x: 10.0
+  y: 0.0
+  z: 0.0
+angular:
+  x: 0.0
+  y: 0.0
+  z: 10.0
+---
+```
