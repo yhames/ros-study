@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<launch>
+    <include file="$(find basic_tutorial)/launch/basic_tutorial.launch"/>
+
+    <node pkg="basic_publish_tutorial" type="basic_publish_node" name="basic_publish_node" output="screen"/>
+    
+    <node pkg="basic_subscribe_tutorial" type="basic_subscribe_node" name="basic_subscribe_node" output="screen"/>
+</launch>
