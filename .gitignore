@@ -1,4 +1,6 @@
 .vscode
+.idea
+cmake-build-debug
 settings.json
 
 # from ROS.gitignore - https://github.com/github/gitignore/blob/main/ROS.gitignore

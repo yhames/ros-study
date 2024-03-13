@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+
+<launch>
+    <node pkg="basic_tutorial" type="basic_node" name="basic_node1" output="screen"/>
+    <node pkg="basic_tutorial" type="basic_node" name="basic_node2" output="screen"/>
+</launch>
