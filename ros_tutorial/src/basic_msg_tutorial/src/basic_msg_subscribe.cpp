@@ -37,7 +37,7 @@ int main(int argc, char **argv)
     loop_rate.sleep();
   }
 
-  ROS_INFO("basic_msg_subscribe_node Close");
+  ROS_INFO("basic_msg_subscribe_node Close");`
 
   return 0;
 }
