@@ -176,3 +176,29 @@ message: "Receive success"
 ```
 
 ## Client 노드 생성
+
+먼저 Client 노드를 위한 패키지를 생성하고 CMakeLists.txt와 package.xml에 tutorial_srvs 의존성을 추가합니다.
+
+Service 노드와 마찬가지로 c++ 코드를 작성하고, 실행파일을 위해 CMakeLists.txt를 수정합니다.
+
+Client 노드 또한 서비스 라이브러리가 먼저 생성되어야므로 add_dependencies를 추가해야합니다.
+
+```cmake
+add_dependencies(basic_service_client_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+```
+
+클라이언트 노드를 실행하면 다음과 같이 응답을 받는 것을 볼 수 있습니다.
+
+```bash
+[ INFO] [1710393396.331520749]: basic_service_client_node Open
+[ INFO] [1710393396.344256744]: rosservice call /tutorial_command command : 'tutorial 1'
+[ INFO] [1710393396.344324345]: Service Call Response result : true
+[ INFO] [1710393396.344379034]: Service Call Response message : Receive success
+[ INFO] [1710393396.344457881]: basic_service_client_node Close
+```
+
+서버 노드에는 다음과 같이 출력이 됩니다.
+
+```bash
+[ INFO] [1710393353.210447139]: Receive Service call tutorial command : tutorial 1
+```
